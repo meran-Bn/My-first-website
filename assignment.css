@@ -1,0 +1,967 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html
+{
+ background-color: #faf4ec;
+}
+
+body 
+{
+ margin: 0 auto;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*- Header -*/
+header 
+{
+ background-color: rgb(255, 255, 255);
+ height: 7em;
+ padding: 1em;
+ width: 100%;
+}
+/*- Logo -*/
+.logo 
+{
+text-align: center;
+
+}
+
+.logo a
+{
+ color: #111;
+ font-size: 1.5em;
+ font-weight: 900;
+}
+
+.logo a .fa-leaf 
+{
+ color: #49ce0b;
+ font-size: 1.5em;
+}
+/*-  -*/
+.right_top_menu 
+{
+ float: right;
+}
+
+.logo a,
+.right_top_menu a,
+.left_top_navigation li a 
+{
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+.right_top_menu a,
+.left_top_navigation li a 
+{
+color: #111;
+
+}
+
+
+/*-  -*/
+.search_box 
+{
+ display: inline-block;
+}
+
+form.search_box  input[type="text"],button
+{
+height: 2.5em;
+padding: .5em;
+font-size: 1em;
+
+}
+
+
+a.login_top_nav
+{
+ padding-left: 1em;
+}
+/*- .right_top_navigation -*/
+.left_top_navigation 
+{
+ float: left;
+}
+/*-  -*/
+.left_top_navigation ul li
+{
+float: left;
+list-style-type: none;
+position: relative;
+
+}
+
+.left_top_navigation ul li
+{
+  padding: .5em;
+}
+
+.left_top_navigation ul li ul{
+  display: none;
+  background-color: #fff;
+  position: absolute;
+}
+
+
+.left_top_navigation ul li:hover ul{
+  display: block;
+}
+
+.left_top_navigation ul li ul li{
+ width: 12em;
+}
+
+.left_top_navigation ul li ul li a
+{
+  background-color: #fff;
+  padding: .5em;
+}
+
+
+
+.left_top_navigation li
+{
+  padding: .1em;
+padding-left: .4em;
+}
+
+
+
+
+.left_top_navigation li a:hover,a:focus
+{
+  color: #49ce0b;
+font-weight: bold;
+  border-bottom: #49ce0b 2px solid;
+}
+/*-----------login_form---------------*/
+.login_form
+{
+  background-color: #e2c313;
+  padding: 2em;
+  position: absolute;
+  z-index: 111111;
+  left: 0;
+  width: 100%;
+  height: 0%;
+text-align: center;
+display: none;
+}
+
+.close_login_btn
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .7em;
+  font-size: 1.7em;
+}
+
+.login_form form input
+{
+  display: block;
+
+}
+.login_form form
+{
+ padding-top: 2em;
+}
+.login_form form input[type="text"], 
+.login_form form input[type="password"]
+{
+  padding: .6em;
+  width: 20em;
+}
+
+.login_form form button
+{
+  width: 16.7em;
+}
+/*------------Mobile menu--------------*/
+.mobile_nav 
+{
+  background-color: #000033;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 1.3em;
+  margin: 0;
+  left: 0;
+  z-index: 100;
+  height: 0%;
+  display: none;
+}
+
+
+.mobile_nav_content_header .close_btn 
+{
+  position: absolute;
+  top: 0;
+right: 0;
+padding: .7em;
+font-size: 1.7em;
+cursor: pointer;
+color: #fff;
+}
+
+.mobile_nav_content_header .user_account a
+{
+float: left;
+padding-left: 1em;
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.mobile_nav_content_body
+{
+  padding-top: 2em;
+  border-bottom:1px #111 solid;
+}
+.mobile_nav_content_body ul li ul{
+  display: none;
+color: #fff;
+}
+
+.mobile_nav_content_body ul li:hover ul{
+  display: block;
+  transition: .3s;
+
+}
+.mobile_nav_content_body ul li {
+
+  list-style-type: none;
+  padding: .4em;
+  
+}
+
+.mobile_nav_content_body ul li a{
+color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 1em;
+
+}
+
+.close_btn:hover,
+.mobile_nav_content_header .user_account a:hover,
+.mobile_nav_content_body ul li a:hover
+{
+color: #74f000;
+transition: .3s;
+
+}
+
+.mobile_nav_social_media
+{
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+}
+
+.mobile_nav_social_media a.fa
+{
+  font-size: 1.6em;
+  line-height: 2em;
+  padding: .3em;
+  color: #080808;
+  text-decoration: none;
+}
+
+/*---------search-mobile-----------*/
+.search_mobile
+{
+  width: 100%;
+  background-color: #000033;
+  padding: 1em;
+  position: absolute;
+  left: 0;
+  height: 0%;
+  z-index: 10;
+display: none;
+}
+
+.close_search
+{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .2em;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.search_mobile input[type="text"]
+{
+  padding: .6em;
+  width: 20em;
+}
+
+.search_mobile input[type="submit"]
+{
+  padding: .6em;
+}
+/*----------------main_heading---------------------
+.main_heading 
+{
+  padding: .4em;
+ text-align: center;
+ border-bottom: 2px solid rgb(0, 0, 0);
+}
+/*---- sign_up_latest_recipes ----*/
+.sign_up_latest_recipes {
+  text-align: center;
+  padding: 1.2em;
+  background-color: black;
+  color: #fff;
+ }
+ 
+ .sign_up_latest_recipes span
+ {
+  color: #fff;
+  cursor: pointer;
+ }
+ .sign_up_latest_recipes h5,input[type="text"],span
+ {
+ display: inline;
+ }
+ 
+ .sign_up_latest_recipes [type="text"]
+ {
+  width: 18em;
+  padding: .4em;
+  font-size: 1em;
+ }
+/*------------#main_page_1--------------*/
+#main_page_1
+{
+display: grid;
+grid-template-columns: repeat(3 ,1fr);
+width: 86%;
+height: 27em;
+margin: 1em auto;
+}
+
+.main_page_1_row_1
+{
+background-image: url("https://www.tasteloveandnourish.com/wp-content/uploads/2017/02/Vegetable-Jambalaya-800x1200.jpg");
+}
+
+.main_page_1_row_2 
+{
+ background-image: url("https://www.acouplecooks.com/wp-content/uploads/2020/07/Vegan-Fajitas-009-735x919.jpg");
+}
+
+.main_page_1_row_3 
+{
+ background-image: url("https://hips.hearstapps.com/del.h-cdn.co/assets/17/30/1501013108-shot-2-88.jpg?crop=1.0xw:1xh;center,top&resize=768:*");
+}
+
+.main_page_1_row_1,
+.main_page_1_row_2,
+.main_page_1_row_3 
+{
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ width: 90%;
+ height: 100%;
+ margin: 0 auto;
+
+}
+/*----------------Main page 2-------------------------*/
+#main_page_2 
+{
+  margin: 2em auto;
+ height: 30em;
+ width: 100%;
+}
+
+.left_main_page_2 
+{
+ float: left;
+ width: 50%;
+ padding: 2em;
+ border-right: #111 solid 2px;
+}
+
+.right_main_page_2 
+{
+float: right;
+width: 50%;
+padding: 2em;
+}
+/*--------------main_page_3------------------*/
+#main_page_3 
+{
+background-color: bisque;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding-top: 2em;
+
+}
+
+.main_page_3_recipes {
+  width: 290px;
+  margin: 1em;
+}
+
+
+
+
+/*----------main_page_4------------*/
+#main_page_4 
+{
+ background-color: bisque;
+ height: 6em;
+ margin: .7em 0;
+}
+
+.main_page_4_content
+{
+text-align: center;
+padding: 1em;
+}
+
+.main_page_4_content h2,form
+{
+display: inline-block;
+}
+
+.main_page_4_content form input[type="text"]
+{
+ width: 20em;
+ padding: 1em;
+}
+
+.main_page_4_content form input[type="submit"]
+{
+ padding: 1em;
+ width: 6em;
+}
+/*--------------------------------*/
+/*------------- Main page 5 and Main page 6-------------------------*/
+#main_page_5,
+#main_page_6 {
+  height: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 86%;
+}
+
+.main_page_6_pasta_image {
+  background-image: url("https://www.ricetteperbimby.it/foto-ricette/sugo-di-pomodorini-e-mandorle-bimby.jpg");
+  float: right;
+}
+
+.main_page_5_lasagna_image{
+  background-image: url("https://th.bing.com/th/id/OIP.t0ObEgV7eeBMkTL7AYooNAHaLH?w=204&h=306&c=7&r=0&o=5&dpr=1.25&pid=1.7");
+  float: left;
+
+}
+
+.main_page_5_lasagna_image,
+.main_page_6_pasta_image {
+  background-repeat: no-repeat;
+ 
+  background-size: 100% 100%;
+  height: 33em;
+  width: 50%;
+  
+
+}
+
+.main_page_5_lasagna_content,
+.main_page_6_pasta_content {
+
+  height: 40em;
+width: 50%;
+}
+.main_page_6_lasagna_content {
+
+  float: right;
+  }
+.main_page_5_lasagna_content {
+
+float: right;
+}
+.main_page_5_lasagna_content_Ingredient,
+.main_page_6_pasta_content_Ingredient {
+  padding: 3em;
+}
+
+.main_page_5_lasagna_table_striped,
+.main_page_6_pasta_table_striped {
+  
+  width: 20em;
+}
+.main_page_5_lasagna_table_striped tbody th,
+.main_page_6_pasta_table_striped tbody th {
+  float: left;
+}
+.main_page_5_lasagna_table_striped tbody td,
+.main_page_6_pasta_table_striped tbody td {
+  float: right;
+}
+.main_page_5_lasagna_table_striped tbody tr:nth-of-type(odd),
+.main_page_6_pasta_table_striped tbody tr:nth-of-type(odd) {
+  background-color: #dbd4d4;
+}
+
+/*-------------- Main page 7 -------------------------*/
+#main_page_7 {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ margin-left: auto;
+margin-right: auto;
+width: 97%;
+}
+
+.main_page_7_content_recipes_1_image{
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/1cdc7cae-c37d-4373-8323-9db43f13fd30.jpg");
+}
+
+.main_page_7_content_recipes_2_image{
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8bf95936-b842-4e73-8375-3ea8fa33d0aa.jpg");
+
+}
+.main_page_7_content_recipes_3_image{
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/85304873-41f8-4a19-b3c8-89cf2a8768ca.jpg");
+
+}
+.main_page_7_content_recipes_4_image {
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/8dd3a47c-40e1-4182-bfcb-190cddeafbc2.jpg");
+ }
+ 
+.main_page_7_content_recipes_5_image{
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/b47362c4-683f-46bd-b909-e2c498813df6.jpg");
+}
+
+
+
+.main_page_7_content_recipes_6_image{
+ background-image: url("https://scm-assets.constant.co/scm/unilever/f4b5026fe1dd6b46672ba349cfbb04e4/dd4f6f1e-554d-4b47-9d27-27e91dfaf29b.jpg");
+}
+
+.main_page_7_content_recipes_1_image,
+.main_page_7_content_recipes_2_image,
+.main_page_7_content_recipes_3_image,
+.main_page_7_content_recipes_4_image,
+.main_page_7_content_recipes_5_image,
+.main_page_7_content_recipes_6_image {
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+height: 20em;
+width: 100%;
+}
+
+.main_page_7_content_recipes_1,
+.main_page_7_content_recipes_2,
+.main_page_7_content_recipes_3,
+.main_page_7_content_recipes_4,
+.main_page_7_content_recipes_5,
+.main_page_7_content_recipes_6 {
+background-color: #fff;
+ width: 97%;
+ height: 44em;
+ margin: 2em auto;
+}
+
+.main_page_7_content_recipes_1 h2, p,
+.main_page_7_content_recipes_2 h2, p,
+.main_page_7_content_recipes_3 h2, p,
+.main_page_7_content_recipes_4 h2, p,
+.main_page_7_content_recipes_5 h2, p,
+.main_page_7_content_recipes_6 h2, p {
+ padding: .5em;
+}
+
+.main_page_7_list_1,
+.main_page_7_list_2,
+.main_page_7_list_3,
+.main_page_7_list_4,
+.main_page_7_list_5,
+.main_page_7_list_6  {
+
+padding: 1.2em;
+
+}
+
+.main_page_7_list_1 li,
+.main_page_7_list_2 li,
+.main_page_7_list_3 li,
+.main_page_7_list_4 li,
+.main_page_7_list_5 li,
+.main_page_7_list_6 li{
+display: inline;
+
+
+}
+
+.main_page_7_list_1 li a,
+.main_page_7_list_2 li a,
+.main_page_7_list_3 li a,
+.main_page_7_list_4 li a,
+.main_page_7_list_5 li a,
+.main_page_7_list_6 li a {
+ color: rgb(0, 0, 0);
+text-decoration: none;
+ padding: 0.2em;
+}
+
+.main_page_7_link,
+.main_page_7_link,
+.main_page_7_link,
+.main_page_7_link,
+.main_page_7_link,
+.main_page_7_link {
+ float: right;
+ padding: 1em;
+ text-decoration: none;
+}
+
+/*------------ main_page_8------------------------------*/
+#main_page_8 {
+width: 100%;
+  margin: 0 auto;
+height: 20em;
+
+}
+.main_page_8_image {
+  background-image:linear-gradient(to top, rgba(56, 53, 53, 0.192), rgba(90, 86, 86, 0.623)), url("https://cdni.rbth.com/rbthmedia/images/2018.02/original/5a8ecb7085600a0da014aef3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+background-size: cover;
+height: 20em;
+ width: 100%;
+}
+
+.main_page_8_content{
+padding-top: 3em;
+text-align: center;
+color: #fff;
+}
+
+.main_page_8_content h2{
+font-size: 3.5em;
+}
+
+.main_page_8_content h2,h4 {
+  padding-bottom: .5em;
+ 
+}
+
+.main_page_8_content button {
+background-color: #e2c313;
+padding: 1em;
+cursor: pointer;
+width: 15em;
+border-radius: 2em;
+font-size: 1em;
+font-weight: bold;
+outline: none;
+border: none;
+}
+
+.main_page_8_content button:hover,
+.main_page_8_content button:focus {
+  background-color: #fff;
+}
+/*--------------------footer-------------------------*/
+footer
+{
+display: flex;
+flex-direction:row;
+padding: 2em;
+width: 100%;
+background-color: rgb(0, 0, 0);
+
+}
+/*------------------*/
+
+.field_email h2, h3 
+{
+  padding-top: 1em;
+}
+
+.field_email input[type="email"],
+.field_Massge input[type="text"]
+{
+width: 20em;
+padding: .7em;
+}
+
+.btn_contact_me 
+{
+  padding-top: 1em;
+}
+
+.btn_contact_me button
+{
+  width: 16.7em;
+
+}
+/*---------------------*/
+.footer_site_map,
+.social_media
+ {
+width: 30%;
+
+}
+
+.contact_us
+{
+  width: 40%;
+
+}
+.social_media a
+{
+display: block;
+
+}
+
+
+.footer_site_map ul li a,
+.contact_us form h2, h3,
+.social_media a
+
+{
+color: #fff;
+text-decoration: none;
+}
+
+.footer_site_map ul li,
+.social_media a
+{
+  padding: .5em;
+}
+
+.footer_site_map ul li a {
+  font-size: 1.2em;
+}
+/*-----------------*/
+footer .social_media a {
+  font-size: 1.7em;
+}
+
+
+/*--------Back top top */
+a.back_to_top {
+
+  place-self:end;
+  position:sticky;
+  bottom:20px;
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  transition: 1.3s;
+}
+
+a.back_to_top p {
+  font-size: 25px;
+}
+
+/******************************************/
+
+@media only screen and  (max-width: 835px){ 
+
+body 
+{
+  width: 100%;
+}  
+  header 
+{
+ height: 4em;
+ width: 100%;
+}
+
+  .open_btn 
+  {
+    position: absolute;
+    right: .5em;
+    font-size: 2em;
+    font-weight: 900;
+    top: .5em;
+    cursor: pointer;
+  }
+.open_btn a 
+{
+  text-decoration: none;
+
+}
+  .search_mobile_nav
+  {
+    position: absolute;
+   left: .5em;
+    font-size: 1.8em;
+    font-weight: 900;
+    top: .7em;
+    cursor: pointer;
+  }
+  .left_top_navigation,.fa-home,
+  .right_top_menu,
+  .main_page_1_row_1
+  {
+    display: none;
+  }
+
+  .sign_up_latest_recipes {
+
+padding: .4em;
+
+   }
+   
+   
+  
+   
+   .sign_up_latest_recipes [type="text"]
+   {
+    width: 14em;
+    padding: .1em;
+    font-size: 1em;
+  
+   }
+   
+   .sign_up_latest_recipes
+   {
+     font-size: 1.2em;
+     line-height: 2;
+   }
+/****** main_page_1 ******/
+  #main_page_1
+{
+display: grid;
+grid-template-columns: repeat(2 ,1fr);
+width: 100%;
+height: 27em;
+margin: 1em auto;
+}
+/****** main_page_2 ******/
+#main_page_2 
+{
+  margin: 1em auto;
+ height: 60em;
+ max-width: 100%;
+}
+
+.left_main_page_2,
+.right_main_page_2 
+{
+ float: none;
+ width: 100%;
+ padding: 2em;
+ border-right: none;
+}
+/****** main_page_3 ******/
+#main_page_3 
+{
+background-color: bisque;
+display: flex;
+justify-content: center;
+width: 100%;
+flex-wrap: wrap;
+padding-top: 2em;
+
+}
+.main_page_3_recipes img{
+width: 100%;
+}
+
+
+/******** Main_page_5 and 6***********/
+#main_page_5,
+#main_page_6 {
+max-width: 100%;
+height: 60em;
+}
+.main_page_6_pasta_image,
+.main_page_5_lasagna_image,
+.main_page_5_lasagna_content,
+.main_page_6_pasta_content
+{
+  float: none;
+  width: 100%;
+}
+.main_page_5_lasagna_image,
+.main_page_6_pasta_image {
+  height: 20em;
+}
+
+/**************** main_page_7 *****************/
+#main_page_7 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+ margin-right: auto;
+ width: 97%;
+ }
+
+ 
+/********** Footer ***********************/
+footer
+{
+display: flex;
+flex-direction:column;
+padding: 2em;
+width: 100%;
+}
+
+.footer_site_map,
+.social_media,
+.contact_us
+ {
+width: 100%;
+
+}
+
+.footer_site_map
+{
+  padding: 2em;
+}
+
+.footer_site_map li 
+{
+  display: inline;
+padding: .5em;
+
+}
+.footer_site_map li a
+{
+  margin: .5em;
+}
+
+.social_media a
+{
+  text-align: center;
+}
+
+.field_email,
+.field_Massge 
+{
+width: 100%;
+}
+}
+
+
+/********************************************/
+@media only screen and  (min-width: 835px)
+{
+.open_btn,
+.search_mobile_nav
+{
+  display: none;
+
+}
+}
